@@ -283,6 +283,47 @@
             </div>
         </div>
         <!-- /Project Sticky Full -->
+        <!-- Blog Section -->
+        <div class="blog_section">
+            <div class="overlay" data-bg-img="{% static 'img/blog/map.png' %}" style="background-image: url({% static 'img/blog/map.png' %});"></div>
+            <!-- Main Title -->
+            <div class="fn_cs_main_title">
+                <div class="container">
+                    <div class="title_holder">
+                        <h3>{% trans "News" %}</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- /Main Title -->
+            <!-- Triple Blog Modern Shortcode -->
+            <div class="fn_cs_triple_blog_modern fn_alpha">
+                <div class="container">
+                    <div class="inner">
+                        <ul>
+                            {% for item in news %}
+                            <li>
+                                <div class="item">
+                                    <div class="img_holder" data-bg-img="{{ item.thumbnail.url }}" style="background-image: url({{ item.thumbnail.url }});">
+                                        <div class="time">
+                                            <span></span>
+                                            <h3>{{ item.publish|date:"d" }}</h3><h5>{{ item.publish|date:"M" }}</h5><h5>{{ item.publish|date:"Y" }}</h5>
+                                        </div>
+                                        <a href="{% url 'news:detail_view' item.slug %}"></a>
+                                            <img src="{{ item.thumbnail.url }}" alt="{{ item.title }}" />
+                                    </div>
+                                    <div class="title_holder">
+                                        <h3><a href="{% url 'news:detail_view' item.slug %}">{{ item.title }}</a>
+                                        </h3>
+                                        <p class="t_footer"><a href="{% url 'news:detail_view' item.slug %}">{% trans "Read More" %}</a></p>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- /Triple Blog Modern Shortcode -->
         </div>
         <!-- /Blog Section -->
 {% endblock %}

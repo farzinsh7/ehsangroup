@@ -22,7 +22,7 @@ class Index(ListView):
         context = super().get_context_data(**kwargs)
         context['industry'] = Industry.objects.filter(status='p')[:4]
         context['company'] = Company.objects.filter(status='p')
-        # context['news'] = News.objects.published()[:3]
+        context['news'] = News.objects.published()[:3]
         return context
 
 
