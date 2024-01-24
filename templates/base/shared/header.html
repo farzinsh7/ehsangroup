@@ -28,19 +28,23 @@
                                 </ul>
                             </li>
                             <li>
-                                <a href="{% url 'about:page' %}">{% trans "About" %}</a>
-                            </li>
-                            <li>
                                 <a href="{% url 'news:list_view' %}">{% trans "News" %}</a>
                             </li>
                             <li>
                                 <a href="{% url 'company:list_view' %}">{% trans "Company" %}</a>
                             </li>
                             <li>
-                                <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
+                                <a href="{% url 'about:page' %}">{% trans "About" %}</a>
                             </li>
                             <li>
-                                <a href="https://www.irantalent.com/en/company/ehsan-group/94129db2-17f4-487d-bee1-d6ccc20ed1c4/overview" target="_blank">{% trans "Career" %}</a>
+                                <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">{% trans "Career" %}</a>
+                                <ul class="sub-menu">
+                                    <li><a target="_blank" href="https://career.ehsan.group">{% trans "Ehsan Management Group" %}</a></li>
+                                    <li><a target="_blank" href="https://job.ehsan.group">{% trans "Hoonam Terade" %}</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -100,13 +104,23 @@
                         </ul>
                     </li>
                     <li>
+                        <a href="{% url 'news:list_view' %}">{% trans "News" %}</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'company:list_view' %}">{% trans "Company" %}</a>
+                    </li>
+                    <li>
                         <a href="{% url 'about:page' %}">{% trans "About" %}</a>
                     </li>
                     <li>
                         <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
                     </li>
-                    <li>
-                        <a href="https://ehsan-group.com/#">{% trans "Career" %}</a>
+                    <li class="menu-item-has-children">
+                        <a href="#">{% trans "Career" %}</a>
+                        <ul class="sub-menu">
+                            <li><a target="_blank" href="https://career.ehsan.group">{% trans "Career" %}</a></li>
+                            <li><a target="_blank" href="https://job.ehsan.group">{% trans "Job" %}</a></li>
+                        </ul>
                     </li>
                 </ul>
             </div>

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 import os
 from pathlib import Path
+from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-d76-h=9axs2gg_jm=%a*80#oyuy!&77%eky&#sql1+@c_-&dd!'
+SECRET_KEY = config('THE_SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -43,6 +44,7 @@ INSTALLED_APPS = [
     'ckeditor_uploader',
     'rosetta',
     'modeltranslation',
+    'django_recaptcha',
     'django_render_partial',
     'home.apps.HomeConfig',
     'industries.apps.IndustriesConfig',
@@ -185,3 +187,6 @@ CKEDITOR_CONFIGS = {
 }
 
 X_FRAME_OPTIONS = 'ALLOWALL'
+
+RECAPTCHA_PUBLIC_KEY = config('THE_RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = config('THE_RECAPTCHA_PRIVATE_KEY')
