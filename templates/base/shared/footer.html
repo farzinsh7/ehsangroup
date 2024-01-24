@@ -47,10 +47,10 @@
                          <div class="widget_nav_menu">
                              <ul class="menu">
                                  <li><a href="{% url 'page:home' %}">{% trans "Home" %}</a></li>
-                                 <li><a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a></li>
-                                 <li><a href="{% url 'news:list_view' %}">{% trans "News" %}</a></li>
-                                 <li><a href="{% url 'company:list_view' %}">{% trans "Company" %}</a></li>
                                  <li><a href="{% url 'about:page' %}">{% trans "About" %}</a></li>
+                                 <li><a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a></li>
+                                 {% comment %} <li><a href="{% url 'news:list_view' %}">{% trans "News" %}</a></li> {% endcomment %}
+                                 <li><a href="{% url 'company:list_view' %}">{% trans "Company" %}</a></li>
                                  <li><a href="{% url 'contact:page' %}">{% trans "Contact" %}</a></li>
                              </ul>
                          </div>
