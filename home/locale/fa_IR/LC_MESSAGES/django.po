@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-24 11:49+0330\n"
-"PO-Revision-Date: 2024-01-24 11:43+0000\n"
+"PO-Revision-Date: 2024-01-27 09:52+0000\n"
 "Last-Translator:   <admin@ga.co>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
@@ -46,7 +46,7 @@ msgstr "خانه"
 #: .\templates\base\shared\header.html:23
 #: .\templates\base\shared\header.html:99
 msgid "Industries"
-msgstr "صنایع فرعی"
+msgstr "کسب و کارهای جدید"
 
 #: .\templates\base\shared\footer.html:51
 #: .\templates\base\shared\header.html:31
@@ -75,7 +75,8 @@ msgstr "تماس با ما"
 #: .\templates\base\shared\footer.html:59
 msgid "Ehsan Group, LCC. All rights reserved. Design and developed by"
 msgstr ""
-" کلیه حقوق این وب سایت محفوظ و متعلق به گروه احسان می‌باشد. طراحی و پیاده سازی"
+" کلیه حقوق این وب سایت محفوظ و متعلق به گروه احسان می‌باشد. طراحی و پیاده "
+"سازی"
 
 #: .\templates\base\shared\footer.html:65
 msgid "To Top"
@@ -163,7 +164,7 @@ msgstr "مدیرعامل گروه احسان."
 
 #: .\home\templates\index.html:257
 msgid "Sub-industries"
-msgstr "صنایع فرعی"
+msgstr "کسب و کارهای جدید"
 
 #: .\home\templates\index.html:327
 msgid "Read More"
@@ -188,8 +189,7 @@ msgstr "ادامه مطلب"
 #~ "We are focused on sustainable business that delivers the best possible "
 #~ "project results."
 #~ msgstr ""
-#~ "ما بر تجارت پایدار متمرکز هستیم که بهترین نتایج پروژه ممکن را ارائه می "
-#~ "دهد."
+#~ "ما بر تجارت پایدار متمرکز هستیم که بهترین نتایج پروژه ممکن را ارائه می دهد."
 
 #~ msgid "Our Responsibility"
 #~ msgstr "مسئولیت ما"
