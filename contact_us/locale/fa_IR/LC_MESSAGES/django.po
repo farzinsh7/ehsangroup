@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-13 13:55+0330\n"
+"POT-Creation-Date: 2024-01-27 14:28+0330\n"
 "PO-Revision-Date: 2024-01-24 11:50+0000\n"
 "Last-Translator:   <admin@ga.co>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,14 +38,14 @@ msgstr "تماس با ما"
 msgid "Get in touch with us"
 msgstr "با ما در تماس باشید"
 
-#: .\contact_us\templates\contact.html:44
+#: .\contact_us\templates\contact.html:47
 msgid "Send Message"
 msgstr "ارسال پیام"
 
-#: .\contact_us\templates\contact.html:67
+#: .\contact_us\templates\contact.html:70
 msgid "Phone:"
 msgstr "تلفن:"
 
-#: .\contact_us\templates\contact.html:68
+#: .\contact_us\templates\contact.html:71
 msgid "Email:"
 msgstr "ایمیل:"

@@ -124,6 +124,23 @@
                     </li>
                 </ul>
             </div>
+            <div class="toll_free_lang">
+                <div class="lang_switcher language-switch">
+                    {% if request.LANGUAGE_CODE == 'fa' %}
+                        <span class="click">En</span>
+                        <ul>
+                            <li><a href="#" class="en" id="switch-language"><span>En</span></a></li>
+                            <li class="active"><span>Fa</span></li>
+                        </ul>
+                    {% else %}
+                        <span class="click">Fa</span>
+                        <ul>
+                            <li class="active"><span>En</span></li>
+                            <li><a href="#" class="fa" id="switch-language"><span>Fa</span></a></li>
+                        </ul>
+                    {% endif %}
+                </div>
+            </div>
         </div>
         <!-- /MOBILE DROPDOWN MENU -->
         </div>

@@ -4886,7 +4886,7 @@ blockquote {
 	width: 100%;
 	float: left;
 	clear: both;
-	padding: 150px 0;
+	padding: 90px 0;
 }
 
 .fn_cs_about {
@@ -4913,6 +4913,7 @@ blockquote {
 	width: 400px;
 	min-width: 400px;
 	padding-top: 40px;
+	align-self: center;
 }
 
 .fn_cs_about .rightpart {
@@ -5488,7 +5489,7 @@ blockquote {
 	width: 100%;
 	float: left;
 	clear: both;
-	padding: 150px 0;
+	padding: 90px 0;
 }
 
 .fn_cs_about_with_rating {
@@ -11562,3 +11563,8 @@ blockquote {
 		padding-left: 30px;
 	}
 }
+
+.make-bigger::first-letter {
+	font-size: 1.5em; /* You can adjust the size as needed */
+	color: #e96264;
+  }
