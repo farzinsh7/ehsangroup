@@ -3173,7 +3173,7 @@ a:focus {
 	display: inline-flex;
 }
 
-.center { 
+.center {
 	text-align-last: center;
 }
 
@@ -10695,9 +10695,28 @@ blockquote {
 	}
 }
 
+.container-fluid {
+	max-width: 1700px;
+	padding: 0 40px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.w-20 {
+	width: 20% !important;
+}
+
+.item-20 {
+	border: 5px solid #eee !important;
+	padding: 100px 30px 50px 30px !important;
+}
 
 .section_3 {
 	padding: 190px 0 200px 0;
+}
+
+.f-20 {
+    font-size: 20px !important;
 }
 
 /*------------------------------------------------------------------*/

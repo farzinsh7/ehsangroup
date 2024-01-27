@@ -27,7 +27,7 @@ class SliderAdmin(admin.TabularInline):
 class FeaturesAdmin(admin.TabularInline):
     model = Features
     extra = 1
-    max_num = 3
+    max_num = 5
 
 
 @admin.register(HomeData)
