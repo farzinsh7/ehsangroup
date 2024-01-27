@@ -12,7 +12,7 @@ class SliderTranslationOptions(TranslationOptions):
 
 @register(Features)
 class FeaturesTranslationOptions(TranslationOptions):
-    fields = ['title', 'description']
+    fields = ['title']
 
 
 @register(SiteInformation)
