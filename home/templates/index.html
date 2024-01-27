@@ -293,7 +293,8 @@
             </div>
         </div>
         <!-- /Project Sticky Full -->
-        <!-- Blog Section -->
+        {% if news %}
+            <!-- Blog Section -->
         <div class="blog_section">
             <div class="overlay" data-bg-img="{% static 'img/blog/map.png' %}" style="background-image: url({% static 'img/blog/map.png' %});"></div>
             <!-- Main Title -->
@@ -336,4 +337,5 @@
             <!-- /Triple Blog Modern Shortcode -->
         </div>
         <!-- /Blog Section -->
+        {% endif %}
 {% endblock %}

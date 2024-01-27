@@ -30,7 +30,7 @@ urlpatterns += i18n_patterns(
     path('',include('home.urls')),
     path('',include('industries.urls')),
     path('',include('company.urls')),
-    path('',include('news.urls')),
+    # path('',include('news.urls')),
     path('',include('about.urls')),
     path('',include('contact_us.urls')),
     path('rosetta/',include('rosetta.urls')),
