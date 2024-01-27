@@ -5478,7 +5478,15 @@ blockquote {
 	}
 
 	.fn_cs_service_query .top_bar {
-		padding-bottom: 85px;
+		padding-bottom: 30px !important;
+	}
+
+	.service_section {
+		padding: 30px 0 !important;
+	}
+
+	.about_section {
+		padding: 30px 0 !important;
 	}
 }
 
