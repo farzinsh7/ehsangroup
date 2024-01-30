@@ -227,4 +227,25 @@ JAZZMIN_SETTINGS = {
     # Copyright on the footer
     "copyright": "Designed By Farzin",
 
+    # Custom icons for side menu apps/models See https://fontawesome.com/icons?d=gallery&m=free&v=5.0.0,5.0.1,5.0.10,5.0.11,5.0.12,5.0.13,5.0.2,5.0.3,5.0.4,5.0.5,5.0.6,5.0.7,5.0.8,5.0.9,5.1.0,5.1.1,5.2.0,5.3.0,5.3.1,5.4.0,5.4.1,5.4.2,5.13.0,5.12.0,5.11.2,5.11.1,5.10.0,5.9.0,5.8.2,5.8.1,5.7.2,5.7.1,5.7.0,5.6.3,5.5.0,5.4.2
+    # for the full list of 5.13.0 free icon classes
+    "icons": {
+        "auth": "fas fa-users-cog",
+        "account.user": "fas fa-user",
+        "auth.Group": "fas fa-users",
+        "home.homedata": "fas fa-house-user",
+        "home.siteinformation": "fas fa-info",
+        "about.aboutcompany": "	fas fa-edit",
+        "company.company": "fas fa-building",
+        "contact_us.contactform": "fab fa-wpforms",
+        "contact_us.contactus": "fas fa-phone-square",
+        "industries.industry": "fas fa-industry",
+        "news.news": "far fa-newspaper",
+        "news.category": "fas fa-database",
+        "news.tags": "fas fa-tags",
+    },
+    # Icons that are used when one is not manually specified
+    "default_icon_parents": "fas fa-chevron-circle-right",
+    "default_icon_children": "fas fa-circle",
+
 }
