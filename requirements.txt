@@ -3,6 +3,7 @@ certifi==2023.7.22
 charset-normalizer==3.3.1
 Django==4.2.4
 django-ckeditor==6.7.0
+django-jazzmin==2.6.0
 django-js-asset==2.1.0
 django-modeltranslation==0.18.11
 django-recaptcha==4.0.0
