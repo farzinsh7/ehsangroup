@@ -15,7 +15,7 @@ class Index(ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         context['industry'] = Industry.objects.filter(status='p')[:4]
-        context['company'] = Company.objects.filter(status='p')
+        context['company'] = Company.objects.filter(status='p').order_by("-publish")
         context['news'] = News.objects.published()[:3]
         return context
 
