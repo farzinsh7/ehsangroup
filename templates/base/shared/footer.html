@@ -47,17 +47,16 @@
                          <div class="widget_nav_menu">
                              <ul class="menu">
                                  <li><a href="{% url 'page:home' %}">{% trans "Home" %}</a></li>
-                                 <li><a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a></li>
-                                 <li><a href="{% url 'news:list_view' %}">{% trans "News" %}</a></li>
-                                 <li><a href="{% url 'company:list_view' %}">{% trans "Company" %}</a></li>
                                  <li><a href="{% url 'about:page' %}">{% trans "About" %}</a></li>
+                                 <li><a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a></li>
+                                 {% comment %} <li><a href="{% url 'news:list_view' %}">{% trans "News" %}</a></li> {% endcomment %}
+                                 <li><a href="{% url 'company:list_view' %}">{% trans "Company" %}</a></li>
                                  <li><a href="{% url 'contact:page' %}">{% trans "Contact" %}</a></li>
-                                 <li><a rel="nofollow" href="https://www.irantalent.com/en/company/ehsan-group/94129db2-17f4-487d-bee1-d6ccc20ed1c4/overview">{% trans "Career" %}</a></li>
                              </ul>
                          </div>
                      </div>
                      <div class="footer_copyright">
-                         <p>{% trans "© 1934 – 2022 Ehsan Group, LCC. All rights reserved. Design and developed by" %},
+                         <p>© 1934 – <script>document.write(/\d{4}/.exec(Date())[0])</script> {% trans "Ehsan Group, LCC. All rights reserved. Design and developed by" %},
                              <a rel="nofollow" href="https://farzinshams.com" target="_blank">Farzin Shams</a>
                          </p>
                      </div>

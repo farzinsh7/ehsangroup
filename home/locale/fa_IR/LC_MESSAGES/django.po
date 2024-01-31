@@ -1,0 +1,188 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-01-27 15:54+0330\n"
+"PO-Revision-Date: 2024-01-27 15:55+0000\n"
+"Last-Translator:   <admin@ga.co>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Translated-Using: django-rosetta 0.9.9\n"
+
+#: .\templates\base\main_base.html:12
+msgid "Ehsan Group | Leading Economic Enterprise"
+msgstr "گروه احسان | بنگاه اقتصادی پیشرو"
+
+#: .\templates\base\shared\contact_sidebar.html:2
+msgid ""
+"Ehsan Group is a well-known brand with more than 50 years of brilliant "
+"history"
+msgstr "گروه احسان برندی شناخته شده با بیش از 50 سال سابقه درخشان است"
+
+#: .\templates\base\shared\contact_sidebar.html:3
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+#: .\templates\base\shared\footer.html:26
+msgid "Helpful Links"
+msgstr "لینک های مفید"
+
+#: .\templates\base\shared\footer.html:49
+#: .\templates\base\shared\header.html:20
+#: .\templates\base\shared\header.html:97
+msgid "Home"
+msgstr "خانه"
+
+#: .\templates\base\shared\footer.html:50
+#: .\templates\base\shared\header.html:23
+#: .\templates\base\shared\header.html:100
+msgid "About"
+msgstr "درباره ما"
+
+#: .\templates\base\shared\footer.html:51
+#: .\templates\base\shared\header.html:26
+#: .\templates\base\shared\header.html:103
+msgid "Industries"
+msgstr "کسب و کارهای جدید"
+
+#: .\templates\base\shared\footer.html:54
+#: .\templates\base\shared\header.html:38
+#: .\templates\base\shared\header.html:115
+msgid "Company"
+msgstr "شرکت ها"
+
+#: .\templates\base\shared\footer.html:55
+#: .\templates\base\shared\header.html:41
+#: .\templates\base\shared\header.html:118
+msgid "Contact"
+msgstr "تماس با ما"
+
+#: .\templates\base\shared\footer.html:60
+msgid "Ehsan Group, LCC. All rights reserved. Design and developed by"
+msgstr ""
+" کلیه حقوق این وب سایت محفوظ و متعلق به گروه احسان می‌باشد. طراحی و پیاده "
+"سازی"
+
+#: .\templates\base\shared\footer.html:66
+msgid "To Top"
+msgstr "بالا"
+
+#: .\templates\base\shared\header.html:44
+#: .\templates\base\shared\header.html:121
+#: .\templates\base\shared\header.html:123
+msgid "Career"
+msgstr "حرفه"
+
+#: .\templates\base\shared\header.html:46
+msgid "Ehsan Management Group"
+msgstr "گروه مدیریت احسان"
+
+#: .\templates\base\shared\header.html:47
+msgid "Hoonam Terade"
+msgstr "هونام تجارت"
+
+#: .\templates\base\shared\header.html:124
+msgid "Job"
+msgstr "موقعیت‌های شغلی"
+
+#: .\home\templates\index.html:65
+msgid "Mission of Ehsan Group"
+msgstr "ماموریت گروه احسان"
+
+#: .\home\templates\index.html:95
+msgid "Ehsan Group Investment"
+msgstr "سرمایه گذاری گروه احسان"
+
+#: .\home\templates\index.html:96
+msgid "Ehsan Group start invest in start-ups in seed stage in 2020"
+msgstr "شروع سرمایه گذاری گروه احسان در استارت آپ ها در مرحله بذر در سال 2020"
+
+#: .\home\templates\index.html:116 .\home\templates\index.html:210
+msgid "View More"
+msgstr "بیشتر ببینید"
+
+#: .\home\templates\index.html:139
+msgid "Ehsan Group Perspective"
+msgstr "دیدگاه گروه احسان"
+
+#: .\home\templates\index.html:149
+#| msgid "One of the regional leading"
+msgid "One of the regional leading Corporations"
+msgstr "یکی از شرکت‌های پیشرو منطقه"
+
+#: .\home\templates\index.html:151
+msgid "50"
+msgstr "50"
+
+#: .\home\templates\index.html:151
+msgid "Years of Experience"
+msgstr "سال تجربه"
+
+#: .\home\templates\index.html:177
+msgid "CEO of Ehsan Group."
+msgstr "مدیرعامل گروه احسان."
+
+#: .\home\templates\index.html:190
+msgid "Sub-industries"
+msgstr "سرمایه‌گذاری‌های گروه احسان"
+
+#: .\home\templates\index.html:237
+msgid "News"
+msgstr "اخبار"
+
+#: .\home\templates\index.html:261
+msgid "Read More"
+msgstr "ادامه مطلب"
+
+#~ msgid "Corporations"
+#~ msgstr "شرکت ها"
+
+#~ msgid ""
+#~ "Making an effort to observe moral standards in business and beneficieries’ "
+#~ "rights"
+#~ msgstr "اهتمام به رعایت اخلاق کسب‌وکار"
+
+#~ msgid "Supporting the environment and extending social responsibility"
+#~ msgstr "حمایت از محیط زیست و توسعه مسئولیت اجتماعی"
+
+#~ msgid "Responding, Responsible, and flexible system"
+#~ msgstr "سیستم پاسخگو، مسئولیت‌پذیر و انعطاف‌پذیر"
+
+#~ msgid "Emphasizing teamwork, hard work, and value addition"
+#~ msgstr "اهمیت به فرهنگ کار تیمی، تلاش و ارزش‌افزایی"
+
+#~ msgid "Promoting innovation, Improvement, and organizational agility"
+#~ msgstr "نوآوری، بهبود و چابکی سازمانی"
+
+#~ msgid "Vision of Ehsan Group"
+#~ msgstr "چشم انداز گروه احسان"
+
+#~ msgid "Always be HONEST"
+#~ msgstr "همیشه صادق"
+
+#~ msgid "Always be LEARNING"
+#~ msgstr "همیشه در حال یادگیری"
+
+#~ msgid "Show RESPECT"
+#~ msgstr "احترام نشان دهید"
+
+#~ msgid "We will Make Your Dream Come True"
+#~ msgstr "ما رویای شما را محقق خواهیم کرد"
+
+#~ msgid ""
+#~ "We are focused on sustainable business that delivers the best possible "
+#~ "project results."
+#~ msgstr ""
+#~ "ما بر تجارت پایدار متمرکز هستیم که بهترین نتایج پروژه ممکن را ارائه می دهد."
+
+#~ msgid "Our Responsibility"
+#~ msgstr "مسئولیت ما"

@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from ckeditor_uploader.fields import RichTextUploadingField
-from django.utils.translation import gettext_lazy as _
+from django.utils.html import format_html
 
 # Create your models here.
 class Industry(models.Model):
@@ -13,8 +13,7 @@ class Industry(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     description = RichTextUploadingField()
     image = models.ImageField(upload_to='industry')
-    image_thumbnail = models.ImageField(upload_to='industry/thumbs',
-                            help_text=_('Best size: 476*694 PX'))
+    image_thumbnail = models.ImageField(upload_to='industry/thumbs')
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -24,3 +23,8 @@ class Industry(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+    def thumbnail_tag(self):
+        return format_html(
+            "<img width=100 height=75 style='border-radius: 5px;' src='{}'>".format(self.image_thumbnail.url))

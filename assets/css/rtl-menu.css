@@ -18,7 +18,7 @@
 	margin-right: 20px;
 }
 .industify_fn_mobilemenu_wrap .vert_menu_list .menu-item-has-children > a:after{
-    right: 45px;
+    left: 0;
     top: 45%;
 	transform: rotate(90deg);
 }

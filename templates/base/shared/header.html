@@ -19,6 +19,9 @@
                             <li>
                                 <a href="{% url 'page:home' %}">{% trans "Home" %}</a>
                             </li>
+                            <li>
+                                <a href="{% url 'about:page' %}">{% trans "About" %}</a>
+                            </li>
                             <li class="menu-item-has-children">
                                 <a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a>
                                 <ul class="sub-menu">
@@ -27,20 +30,21 @@
                                     {% endfor %}
                                 </ul>
                             </li>
-                            <li>
+                            {% comment %} <li>
                                 <a href="{% url 'news:list_view' %}">{% trans "News" %}</a>
-                            </li>
+                            </li> {% endcomment %}
                             <li>
                                 <a href="{% url 'company:list_view' %}">{% trans "Company" %}</a>
                             </li>
                             <li>
-                                <a href="{% url 'about:page' %}">{% trans "About" %}</a>
-                            </li>
-                            <li>
                                 <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
                             </li>
-                            <li>
-                                <a rel="nofollow" href="https://www.irantalent.com/en/company/ehsan-group/94129db2-17f4-487d-bee1-d6ccc20ed1c4/overview" target="_blank">{% trans "Career" %}</a>
+                            <li class="menu-item-has-children">
+                                <a href="#">{% trans "Career" %}</a>
+                                <ul class="sub-menu">
+                                    <li><a target="_blank" href="https://career.ehsan.group">{% trans "Ehsan Management Group" %}</a></li>
+                                    <li><a target="_blank" href="https://job.ehsan.group">{% trans "Hoonam Terade" %}</a></li>
+                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -91,6 +95,9 @@
                     <li>
                         <a href="{% url 'page:home' %}">{% trans "Home" %}</a>
                     </li>
+                    <li>
+                        <a href="{% url 'about:page' %}">{% trans "About" %}</a>
+                    </li>
                     <li class="menu-item-has-children">
                         <a href="{% url 'industry:list_view' %}">{% trans "Industries" %}</a>
                         <ul class="sub-menu">
@@ -99,22 +106,40 @@
                             {% endfor %}
                         </ul>
                     </li>
-                    <li>
+                    {% comment %} <li>
                         <a href="{% url 'news:list_view' %}">{% trans "News" %}</a>
-                    </li>
+                    </li> {% endcomment %}
                     <li>
                         <a href="{% url 'company:list_view' %}">{% trans "Company" %}</a>
                     </li>
                     <li>
-                        <a href="{% url 'about:page' %}">{% trans "About" %}</a>
-                    </li>
-                    <li>
                         <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
                     </li>
-                    <li>
-                        <a rel="nofollow" href="https://www.irantalent.com/en/company/ehsan-group/94129db2-17f4-487d-bee1-d6ccc20ed1c4/overview">{% trans "Career" %}</a>
+                    <li class="menu-item-has-children">
+                        <a href="#">{% trans "Career" %}</a>
+                        <ul class="sub-menu">
+                            <li><a target="_blank" href="https://career.ehsan.group">{% trans "Career" %}</a></li>
+                            <li><a target="_blank" href="https://job.ehsan.group">{% trans "Job" %}</a></li>
+                        </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="toll_free_lang">
+                <div class="lang_switcher language-switch">
+                    {% if request.LANGUAGE_CODE == 'fa' %}
+                        <span class="click">En</span>
+                        <ul>
+                            <li><a href="#" class="en" id="switch-language"><span>En</span></a></li>
+                            <li class="active"><span>Fa</span></li>
+                        </ul>
+                    {% else %}
+                        <span class="click">Fa</span>
+                        <ul>
+                            <li class="active"><span>En</span></li>
+                            <li><a href="#" class="fa" id="switch-language"><span>Fa</span></a></li>
+                        </ul>
+                    {% endif %}
+                </div>
             </div>
         </div>
         <!-- /MOBILE DROPDOWN MENU -->

@@ -27,7 +27,6 @@ class Slider(models.Model):
 
 class Features(models.Model):
     title = models.CharField(max_length=200)
-    description = models.TextField(null=True)
     home_data = models.ForeignKey(HomeData, null=True, on_delete=models.SET_NULL, related_name='features')
 
     def __str__(self):

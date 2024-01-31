@@ -23,16 +23,14 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('ckeditor/', include('ckeditor_uploader.urls')),
-    path("__debug__/", include("debug_toolbar.urls")),
 ]
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),
     path('',include('home.urls')),
-    path('dashboard/',include('account.urls')),
     path('',include('industries.urls')),
     path('',include('company.urls')),
-    path('',include('news.urls')),
+    # path('',include('news.urls')),
     path('',include('about.urls')),
     path('',include('contact_us.urls')),
     path('rosetta/',include('rosetta.urls')),

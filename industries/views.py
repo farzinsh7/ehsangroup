@@ -5,7 +5,7 @@ from .models import Industry
 
 # Create your views here.
 class IndustryListView(ListView):
-    queryset = Industry.objects.filter(status="p")
+    queryset = Industry.objects.filter(status="p").order_by('-publish')
     model = Industry
     template_name = 'industry_list.html'
     context_object_name = 'industry'
@@ -13,7 +13,7 @@ class IndustryListView(ListView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['latest'] = Industry.objects.filter(status="p")[:5]
+        context['latest'] = Industry.objects.filter(status="p").order_by('-publish')[:5]
         return context
 
 class IndustryDetailView(DetailView):

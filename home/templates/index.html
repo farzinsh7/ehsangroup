@@ -35,21 +35,15 @@
         <!-- /Alpha Slider -->
         <!-- Principles Modern -->
         <div class="fn_cs_principles_modern">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="inner">
                     <div class="shape"><span class="shape1"></span><span class="shape2"></span></div>
                     <ul class="fn_cs_miniboxes">
                         {% for feature in home.features.all  %}
-                        <li>
-                            <div class="item">
+                        <li class="w-20">
+                            <div class="item item-20">
                                 <div class="title_holder">
-                                    <h3>{{ feature.title }}</h3>
-                                    <p>{{ feature.description }}</p>
-                                    <span class="icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 31.49 31.49" style="enable-background:new 0 0 31.49 31.49;" xml:space="preserve" class="fn__svg replaced-svg">
-<path d="M21.205,5.007c-0.429-0.444-1.143-0.444-1.587,0c-0.429,0.429-0.429,1.143,0,1.571l8.047,8.047H1.111  C0.492,14.626,0,15.118,0,15.737c0,0.619,0.492,1.127,1.111,1.127h26.554l-8.047,8.032c-0.429,0.444-0.429,1.159,0,1.587  c0.444,0.444,1.159,0.444,1.587,0l9.952-9.952c0.444-0.429,0.444-1.143,0-1.571L21.205,5.007z"></path>
-</svg>
-								 </span>
+                                    <h3 class="f-20 make-bigger">{{ feature.title }}</h3>
                                 </div>
                                 <div class="number_holder">0{{ forloop.counter }}</div>
                             </div>
@@ -68,8 +62,8 @@
                     <div class="a_inner">
                         <div class="leftpart">
                             <div class="title_holder">
-                                <h3 class="title">{% trans "Vision of Ehsan Group" %}</h3>
-                                {{ home.about|safe }}
+                                <h3 class="title">{% trans "Mission of Ehsan Group" %}</h3>
+                                {{ home.mission|safe }}
                             </div>
                         </div>
                         <div class="rightpart">
@@ -142,8 +136,8 @@
                     <div class="awr_inner">
                         <div class="left_part">
                             <div class="title_holder">
-                                <h3>{% trans "Mission of Ehsan Group" %}</h3>
-                                {{ home.mission|safe }}
+                                <h3>{% trans "Ehsan Group Perspective" %}</h3>
+                                {{ home.about|safe }}
                             </div>
                         </div>
                         <div class="right_part">
@@ -152,48 +146,12 @@
                                     <div class="badge_holder">
                                         <div class="badge_left">
                                             <div class="b_title">
-                                                <h3>{% trans "One of the regional leading" %}<br>{% trans "Corporations" %}</h3>
+                                                <h3>{% trans "One of the regional leading Corporations" %}</h3>
                                             </div>
                                             <div class="b_desc"><span class="year">{% trans "50" %}</span><span class="text">{% trans "Years of Experience" %}</span>
                                             </div>
                                         </div>
                                         <div class="badge_right" data-bg-img="{% static 'img/service/right-image.jpg' %}" style="background-image: url({% static 'img/service/right-image.jpg' %});"></div>
-                                    </div>
-                                </div>
-                                <div class="bottom_section">
-                                    <div class="list">
-                                        <ul>
-                                            <li>
-                                                <div class="item">
-													<span class="icon">
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 26 26" enable-background="new 0 0 26 26" class="fn__svg replaced-svg">
-  <path d="m.3,14c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1v-8.88178e-16c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.4 0.4,1 0,1.4l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.5-0.1-0.7-0.3l-7.8-8.4-.2-.3z"></path>
-</svg>
-													</span>
-                                                    <p>{% trans "Always be HONEST" %}</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item">
-										  			<span class="icon">
-													 	<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 26 26" enable-background="new 0 0 26 26" class="fn__svg replaced-svg">
-  <path d="m.3,14c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1v-8.88178e-16c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.4 0.4,1 0,1.4l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.5-0.1-0.7-0.3l-7.8-8.4-.2-.3z"></path>
-</svg>
-										  			</span>
-                                                    <p>{% trans "Always be LEARNING" %}</p>
-                                                </div>
-                                            </li>
-                                            <li>
-                                                <div class="item">
-										  			<span class="icon">
-														<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 26 26" enable-background="new 0 0 26 26" class="fn__svg replaced-svg">
-  <path d="m.3,14c-0.2-0.2-0.3-0.5-0.3-0.7s0.1-0.5 0.3-0.7l1.4-1.4c0.4-0.4 1-0.4 1.4,0l.1,.1 5.5,5.9c0.2,0.2 0.5,0.2 0.7,0l13.4-13.9h0.1v-8.88178e-16c0.4-0.4 1-0.4 1.4,0l1.4,1.4c0.4,0.4 0.4,1 0,1.4l0,0-16,16.6c-0.2,0.2-0.4,0.3-0.7,0.3-0.3,0-0.5-0.1-0.7-0.3l-7.8-8.4-.2-.3z"></path>
-</svg>
-										 			</span>
-                                                    <p>{% trans "Show RESPECT" %}</p>
-                                                </div>
-                                            </li>
-                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -204,21 +162,6 @@
             <!-- /About with Rating Shortcode -->
         </div>
         <!-- /Service Section -->
-        <!-- Call to Action -->
-        <div class="fn_cs_call_to_action">
-            <div class="container">
-                <div class="cta_holder">
-                    <div class="title_holder">
-                        <h3>{% trans "We will Make Your Dream Come True" %}</h3>
-                        <p>{% trans "We are focused on sustainable business that delivers the best possible project results." %}</p>
-                    </div>
-                    <div class="link_holder">
-                        <a href="{% url 'contact:page' %}">{% trans "Our Responsibility" %}</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /Call to Action -->
         <!-- Testimonial Section -->
         <div class="testimonial_section">
             <div class="overlay"></div>
@@ -283,7 +226,8 @@
             </div>
         </div>
         <!-- /Project Sticky Full -->
-        <!-- Blog Section -->
+        {% if news %}
+            <!-- Blog Section -->
         <div class="blog_section">
             <div class="overlay" data-bg-img="{% static 'img/blog/map.png' %}" style="background-image: url({% static 'img/blog/map.png' %});"></div>
             <!-- Main Title -->
@@ -326,4 +270,5 @@
             <!-- /Triple Blog Modern Shortcode -->
         </div>
         <!-- /Blog Section -->
+        {% endif %}
 {% endblock %}
