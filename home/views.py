@@ -4,6 +4,9 @@ from .models import SiteInformation, HomeData
 from industries.models import Industry
 from company.models import Company
 from news.models import News
+from django.views.decorators.cache import cache_page
+from django.utils.decorators import method_decorator
+
 
 # Create your views here.
 class Index(ListView):
@@ -20,6 +23,7 @@ class Index(ListView):
         return context
 
 
+@method_decorator(cache_page(60 * 15), name='dispatch')
 class SiteHeaderView(ListView):
     model = SiteInformation
     template_name = 'base/shared/header.html'
@@ -32,6 +36,7 @@ class SiteHeaderView(ListView):
         return context
 
 
+@method_decorator(cache_page(60 * 15), name='dispatch')
 class SiteFooterView(ListView):
     model = SiteInformation
     template_name = 'base/shared/footer.html'
