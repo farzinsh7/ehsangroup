@@ -20,3 +20,4 @@ class CompanyDetailView(DetailView):
     queryset = Company.objects.filter(status='p')
     context_object_name = "company"
     template_name = 'company_detail.html'
+

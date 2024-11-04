@@ -39,13 +39,15 @@
                             <li>
                                 <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
                             </li>
-                            <li class="menu-item-has-children">
-                                <a href="#">{% trans "Career" %}</a>
-                                <ul class="sub-menu">
-                                    <li><a target="_blank" href="https://career.ehsan.group">{% trans "Ehsan Management Group" %}</a></li>
-                                    <li><a target="_blank" href="https://job.ehsan.group">{% trans "Hoonam Terade" %}</a></li>
-                                </ul>
-                            </li>
+                            {% if request.LANGUAGE_CODE == 'fa' %}
+                                <li class="menu-item-has-children">
+                                    <a href="#">{% trans "Career" %}</a>
+                                    <ul class="sub-menu">
+                                        <li><a target="_blank" href="https://career.ehsan.group">{% trans "Ehsan Management Group" %}</a></li>
+                                        <li><a target="_blank" href="https://job.ehsan.group">{% trans "Hoonam Trade" %}</a></li>
+                                    </ul>
+                                </li>
+                            {% endif %}
                         </ul>
                     </div>
                     <div class="toll_free_lang">
@@ -115,13 +117,15 @@
                     <li>
                         <a href="{% url 'contact:page' %}">{% trans "Contact" %}</a>
                     </li>
-                    <li class="menu-item-has-children">
-                        <a href="#">{% trans "Career" %}</a>
-                        <ul class="sub-menu">
-                            <li><a target="_blank" href="https://career.ehsan.group">{% trans "Career" %}</a></li>
-                            <li><a target="_blank" href="https://job.ehsan.group">{% trans "Job" %}</a></li>
-                        </ul>
-                    </li>
+                    {% if request.LANGUAGE_CODE == 'fa' %}
+                        <li class="menu-item-has-children">
+                            <a href="#">{% trans "Career" %}</a>
+                            <ul class="sub-menu">
+                                <li><a target="_blank" href="https://career.ehsan.group">{% trans "Career" %}</a></li>
+                                <li><a target="_blank" href="https://job.ehsan.group">{% trans "Job" %}</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
                 </ul>
             </div>
             <div class="toll_free_lang">

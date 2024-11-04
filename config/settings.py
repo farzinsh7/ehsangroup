@@ -27,7 +27,10 @@ SECRET_KEY = config('THE_SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# ALLOWED_HOSTS = ['ehsan.group','www.ehsan.group']
 ALLOWED_HOSTS = []
+
+# SECURE_SSL_REDIRECT = True
 
 
 # Application definition
@@ -44,11 +47,11 @@ INSTALLED_APPS = [
     'ckeditor',
     'ckeditor_uploader',
     'rosetta',
+    'sorl.thumbnail',
     'modeltranslation',
     'django_recaptcha',
     'django_render_partial',
-    'sorl.thumbnail',
-
+    
     # Custom Apps
     'home.apps.HomeConfig',
     'industries.apps.IndustriesConfig',
@@ -95,10 +98,19 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': config('THE_NAME'),
+        'USER': config('THE_USER'),
+        'PASSWORD': config('THE_PASSWORD'),
+        'HOST': config('THE_HOST'),
+        'PORT': '3306',
+        'OPTIONS':{
+            'sql_mode': 'STRICT_ALL_TABLES'
+        }
     }
 }
+
+
 
 
 # Password validation
@@ -119,6 +131,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -189,11 +210,11 @@ CKEDITOR_CONFIGS = {
     }
 }
 
-X_FRAME_OPTIONS = 'ALLOWALL'
+X_FRAME_OPTIONS = 'DENY'  # Ensure that X-Frame-Options is also configured correctly
+CROSS_ORIGIN_OPENER_POLICY = 'same-origin'
 
 RECAPTCHA_PUBLIC_KEY = config('THE_RECAPTCHA_PUBLIC_KEY')
 RECAPTCHA_PRIVATE_KEY = config('THE_RECAPTCHA_PRIVATE_KEY')
-
 
 
 JAZZMIN_SETTINGS = {

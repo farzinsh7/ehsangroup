@@ -12,12 +12,14 @@ django-redis==5.4.0
 django-render-partial==0.4
 django-rosetta==0.9.9
 idna==3.4
-mysqlclient==2.2.0
+mysqlclient==2.2.5
 Pillow==10.0.1
 polib==1.2.0
 python-decouple==3.8
+python-gettext==5.0
 redis==5.0.1
 requests==2.31.0
+setuptools==75.3.0
 sorl-thumbnail==12.9.0
 sqlparse==0.4.4
 typing_extensions==4.8.0

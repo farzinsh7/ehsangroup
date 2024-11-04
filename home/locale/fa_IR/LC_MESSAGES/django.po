@@ -9,8 +9,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-01-27 15:54+0330\n"
-"PO-Revision-Date: 2024-01-27 15:55+0000\n"
-"Last-Translator:   <admin@ga.co>\n"
+"PO-Revision-Date: 2024-10-15 05:23+0000\n"
+"Last-Translator:   <farzinnater@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -87,7 +87,7 @@ msgid "Ehsan Management Group"
 msgstr "گروه مدیریت احسان"
 
 #: .\templates\base\shared\header.html:47
-msgid "Hoonam Terade"
+msgid "Hoonam Trade"
 msgstr "هونام تجارت"
 
 #: .\templates\base\shared\header.html:124
