@@ -21,9 +21,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 
-urlpatterns = [
-    path('ckeditor/', include('ckeditor_uploader.urls')),
-]
+urlpatterns = []
 
 urlpatterns += i18n_patterns(
     path('admin/', admin.site.urls),

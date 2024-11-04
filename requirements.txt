@@ -3,7 +3,6 @@ async-timeout==4.0.3
 certifi==2023.7.22
 charset-normalizer==3.3.1
 Django==4.2.4
-django-ckeditor==6.7.0
 django-jazzmin==2.6.0
 django-js-asset==2.1.0
 django-modeltranslation==0.18.11
@@ -11,6 +10,7 @@ django-recaptcha==4.0.0
 django-redis==5.4.0
 django-render-partial==0.4
 django-rosetta==0.9.9
+django-tinymce==4.1.0
 idna==3.4
 mysqlclient==2.2.5
 Pillow==10.0.1

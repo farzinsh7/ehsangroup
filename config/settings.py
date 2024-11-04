@@ -63,7 +63,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.locale.LocaleMiddleware',  # new
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -108,7 +108,6 @@ DATABASES = {
         }
     }
 }
-
 
 
 
@@ -190,24 +189,6 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'static-cdn', 'media-root')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'account.User'
-
-CKEDITOR_UPLOAD_PATH = "uploads/"
-
-CKEDITOR_CONFIGS = {
-    'default': {
-        'toolbar': (
-            ['Bold', 'Italic', 'Underline'],
-            ['NumberedList', 'BulletedList', '-', 'Blockquote'],
-            ['JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock'],
-            ['Link', 'Unlink', 'Anchor'],
-            ['Image', 'Flash', 'Table', 'HorizontalRule',
-                'Smiley', 'SpecialChar', 'PageBreak'],
-            ['Styles', 'Format', 'Font', 'FontSize'],
-            ['TextColor', 'BGColor'],
-            ['Maximize', 'ShowBlocks', '-', 'pbckcode'],
-        ),
-    }
-}
 
 X_FRAME_OPTIONS = 'DENY'  # Ensure that X-Frame-Options is also configured correctly
 CROSS_ORIGIN_OPENER_POLICY = 'same-origin'
