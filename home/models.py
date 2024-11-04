@@ -1,15 +1,15 @@
 from django.db import models
-from ckeditor_uploader.fields import RichTextUploadingField
+from tinymce.models import HTMLField
 
 
 # Create your models here.
 
 class HomeData(models.Model):
     title = models.CharField(max_length=250)
-    about = RichTextUploadingField()
-    mission = RichTextUploadingField()
-    quote = RichTextUploadingField()
-    sub_industries = RichTextUploadingField()
+    about = HTMLField()
+    mission = HTMLField()
+    quote = HTMLField()
+    sub_industries = HTMLField()
 
     def __str__(self):
         return self.title

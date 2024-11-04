@@ -1,6 +1,6 @@
 from django.db import models
 from django.utils import timezone
-from ckeditor_uploader.fields import RichTextUploadingField
+from tinymce.models import HTMLField
 from django.utils.html import format_html
 
 # Create your models here.
@@ -11,7 +11,7 @@ class Industry(models.Model):
     )
     title = models.CharField(max_length=300)
     slug = models.SlugField(max_length=200, unique=True)
-    description = RichTextUploadingField()
+    description = HTMLField()
     image = models.ImageField(upload_to='industry')
     image_thumbnail = models.ImageField(upload_to='industry/thumbs')
     publish = models.DateTimeField(default=timezone.now)

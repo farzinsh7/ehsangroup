@@ -1,7 +1,7 @@
 from django.db import models
 from django.utils import timezone
 from account.models import User
-from ckeditor_uploader.fields import RichTextUploadingField
+from tinymce.models import HTMLField
 
 
 
@@ -39,7 +39,7 @@ class News(models.Model):
     slug = models.SlugField(max_length=200, unique=True)
     category = models.ManyToManyField(Category, related_name='news')
     tags = models.ManyToManyField(Tags, related_name='news', blank=True)
-    description = RichTextUploadingField()
+    description = HTMLField()
     image = models.ImageField(upload_to='news')
     thumbnail = models.ImageField(upload_to='news/thumb', null=True)
     publish = models.DateTimeField(default=timezone.now)

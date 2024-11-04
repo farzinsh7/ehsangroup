@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account.apps.AccountConfig',
-    'ckeditor',
-    'ckeditor_uploader',
+    'tinymce',
     'rosetta',
     'sorl.thumbnail',
     'modeltranslation',
@@ -131,15 +130,15 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://127.0.0.1:6379/",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://127.0.0.1:6379/",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
@@ -270,3 +269,57 @@ JAZZMIN_SETTINGS = {
     "default_icon_children": "fas fa-circle",
 
 }
+
+
+TINYMCE_DEFAULT_CONFIG = {
+    "entity_encoding": "raw",
+    "theme": "silver",
+    "setup": "function(editor){editor.on('change', function(){editor.save();});}",
+    "menubar": "file edit view insert format tools table",
+    "plugins": 'print preview paste importcss searchreplace autolink autosave save code visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists wordcount imagetools textpattern noneditable help charmap emoticons quickbars',
+    "toolbar": "fullscreen preview | undo redo | bold italic forecolor backcolor | formatselect | image link | "
+               "alignleft aligncenter alignright alignjustify | blocks | fonts | outdent indent |  numlist bullist checklist | fontsizeselect ",
+    "custom_undo_redo_levels": 50,
+    "image_dimensions": False,
+    "quickbars_insert_toolbar": False,
+    "setup": """function (editor) {
+        editor.on('SetContent', function (e) {
+            var imgs = editor.getDoc().getElementsByTagName('img');
+            for (var i = 0; i < imgs.length; i++) {
+                imgs[i].style.width = '90%';
+            }
+        });
+    }""",
+    "file_picker_callback": """function (cb, value, meta) {
+        var input = document.createElement("input");
+        input.setAttribute("type", "file");
+        if (meta.filetype == "image") {
+            input.setAttribute("accept", "image/*");
+        }
+        if (meta.filetype == "media") {
+            input.setAttribute("accept", "video/*");
+        }
+
+        input.onchange = function () {
+            var file = this.files[0];
+            var reader = new FileReader();
+            reader.onload = function () {
+                var id = "blobid" + (new Date()).getTime();
+                var blobCache = tinymce.activeEditor.editorUpload.blobCache;
+                var base64 = reader.result.split(",")[1];
+                var blobInfo = blobCache.create(id, file, base64);
+                blobCache.add(blobInfo);
+
+                if (meta.filetype == "image") {
+                    cb(blobInfo.blobUri(), { title: file.name, width: '90%' });
+                } else {
+                    cb(blobInfo.blobUri(), { title: file.name });
+                }
+            };
+            reader.readAsDataURL(file);
+        };
+        input.click();
+    }""",
+    "content_style": "body { font-family:Roboto,Helvetica,Arial,sans-serif; font-size:14px }",
+}
+
